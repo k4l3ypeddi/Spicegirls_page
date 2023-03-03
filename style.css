@@ -1,26 +1,92 @@
 
 body {
-  height: 1700px;
-   background-image: linear-gradient(to bottom right, rgb(240, 164, 244), rgb(236, 229, 241));
+  height: 1000px;
+   background-image:url(stickers/sparkles3.gif);
+   background-size:200px;
+   background-repeat: repeat;
+   background-color:rgb(255, 223, 229);
+  cursor: url(images/cursor.pix.png),auto;
 }
-    #wobble {
+
+#rec {
+  height: 600px;
+  width: 1000px;
+  position:absolute;
+  left:12%;
+  top:12%;
+  }
+
+#mydiv {
+  position: absolute;
+  z-index: 9;
+  background-color: #f1f1f1;
+  text-align: center;
+  border: 1px solid #d3d3d3;
+}
+
+#mydivheader {
+  padding: 10px;
+  cursor: move;
+  z-index: 10;
+  background-color: #2196F3;
+  color: #fff;
+}
+
+    #intro {
       color: hsl(300, 92%, 76%);
       text-align: center;
-      background: url(http://www.gigaglitters.com/img/DCglit2.gif); 
+      position:fixed;
+      background: url(http://www.gigaglitters.com/img/DCglit107.gif); 
       -webkit-background-clip:text;
       -webkit-text-fill-color:transparent;
     }
+    #intro2 {
+      color: hsl(300, 92%, 76%);
+      text-align: center;
+      position:fixed;
+      background: url(http://www.gigaglitters.com/img/DCglit107.gif); 
+      -webkit-background-clip:text;
+      -webkit-text-fill-color:transparent;
+    }
+
+    .button1 {
+      position: fixed;
+      left:20%;
+      top:80%;
+      z-index: 3;
+    }
+    .button2 {
+      position: fixed;
+      left:40%;
+      top:80%;
+      z-index: 3;
+    }
+    .button3 {
+      position: fixed;
+      left:60%;
+      top:80%;
+      z-index: 3;
+    }
+
 form {
   position: fixed;
   left: 43%;
   top: 90%;
 }
-
+.container-grid {
+  display: grid;
+  grid-template-columns: auto auto auto; 
+  grid-gap: 10px;
+  grid-template-rows: 100px 100px 100px;
+ 
+}
     #wobble {
-      font-size: 80px;
+      font-size: 50px;
       text-decoration: underline;
-      top:400px;
+      
     }
+   
+    
 #menu-area {
   position: absolute;
 text-align: center;
@@ -28,61 +94,71 @@ font-size:35px;
 }
     #player {
       position:absolute;
-      left:20px;
-      top:0px;
+      left:85%;
+      top:10%;
       height:50px;
-      width:150px;
+      width:100px;
     }
 
 #image1 {
   position: absolute;
-  width: 175px;
+  width: 150px;
   height: auto;
-  top: 195px;
-  left: 360px;
+  top:25%;
+  left: 25%;
   z-index: 2;
 }
    
 #image2 {
   position:absolute;
-  width: 140px;
+  width: 115px;
 height:auto;
-  top: 135px;
-  left: 520px;
+  top: 20%;
+  left: 35%;
   z-index: 2;
 }
 #image3 {
   position:absolute;
-  width: 135px;
+  width: 105px;
   height: auto;
-  top: 190px;
-  left: 650px;
+  top: 25%;
+  left: 45%;
   z-index: 2;
 }
    #image4 {
       position:absolute;
-      width: 120px;
+      width: 110px;
       height: auto;
-      top:200px;
-      left:775px;
+      top:25%;
+      left:55%;
       z-index: 2;
     }
     
     #image5 {
       height:auto;
-      width:150px;
+      width:130px;
       position:absolute;
-    top: 215px;
-    left: 900px;
+    top: 27%;
+    left:65%;
     z-index: 2;
     }
-    #background {
+#background {
+      margin-left: auto;
+      margin-right:auto;
+      height: auto;
+      width:200px;
+      top:5%;
+      left:5%;
+      position: absolute;
+      z-index:1;
+}
+   /* #background {
       margin-left: auto;
       margin-right:auto;
       height: auto;
       width:500px;
-      top:200px;
-      left:475px;
+      top:25%;
+      left:33%;
       position: absolute;
       z-index:1;
     } 
@@ -211,28 +287,10 @@ height:auto;
     width:auto;
     zindex:2;
   }
-  /* customizable snowflake styling */
+  /* customizable snowflake styling 
   .snowflake {
     color: #fff;
-    font-size: 1em;
-    font-family: Arial;
-    text-shadow: 0 0 1px #000;
-  }
-  
-  @-webkit-keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@-webkit-keyframes snowflakes-shake{0%{-webkit-transform:translateX(0px);transform:translateX(0px)}50%{-webkit-transform:translateX(80px);transform:translateX(80px)}100%{-webkit-transform:translateX(0px);transform:translateX(0px)}}@keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@keyframes snowflakes-shake{0%{transform:translateX(0px)}50%{transform:translateX(80px)}100%{transform:translateX(0px)}}.snowflake{position:fixed;top:-10%;z-index:9999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:default;-webkit-animation-name:snowflakes-fall,snowflakes-shake;-webkit-animation-duration:10s,3s;-webkit-animation-timing-function:linear,ease-in-out;-webkit-animation-iteration-count:infinite,infinite;-webkit-animation-play-state:running,running;animation-name:snowflakes-fall,snowflakes-shake;animation-duration:10s,3s;animation-timing-function:linear,ease-in-out;animation-iteration-count:infinite,infinite;animation-play-state:running,running}.snowflake:nth-of-type(0){left:1%;-webkit-animation-delay:0s,0s;animation-delay:0s,0s}.snowflake:nth-of-type(1){left:10%;-webkit-animation-delay:1s,1s;animation-delay:1s,1s}.snowflake:nth-of-type(2){left:20%;-webkit-animation-delay:6s,.5s;animation-delay:6s,.5s}.snowflake:nth-of-type(3){left:30%;-webkit-animation-delay:4s,2s;animation-delay:4s,2s}.snowflake:nth-of-type(4){left:40%;-webkit-animation-delay:2s,2s;animation-delay:2s,2s}.snowflake:nth-of-type(5){left:50%;-webkit-animation-delay:8s,3s;animation-delay:8s,3s}.snowflake:nth-of-type(6){left:60%;-webkit-animation-delay:6s,2s;animation-delay:6s,2s}.snowflake:nth-of-type(7){left:70%;-webkit-animation-delay:https://proxy.everskies.com/a/https://proxy.everskies.com/a/2.5s,1s;animation-delay:https://proxy.everskies.com/a/https://proxy.everskies.com/a/2.5s,1s}.snowflake:nth-of-type(8){left:80%;-webkit-animation-delay:1s,0s;animation-delay:1s,0s}.snowflake:nth-of-type(9){left:90%;-webkit-animation-delay:3s,https://proxy.everskies.com/a/https://proxy.everskies.com/a/1.5s;animation-delay:3s,https://proxy.everskies.com/a/https://proxy.everskies.com/a/1.5s}
-  /* Demo Purpose Only*/
-  .demo {
-    font-family: 'Raleway', sans-serif;
-      color:#fff;
-      display: block;
-      margin: 0 auto;
-      padding: 15px 0;
-      text-align: center;
-  }
-  .demo a{
-    font-family: 'Raleway', sans-serif;
-  color: #000;		
-  }
+    
 
 
 
