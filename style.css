@@ -1,4 +1,5 @@
 
+
 body {
   height: 1000px;
    background-image:url(stickers/sparkles3.gif);
@@ -8,85 +9,11 @@ body {
   cursor: url(images/cursor.pix.png),auto;
 }
 
-.box {
-  width: 40%;
-  margin: 0 auto;
-  background: rgba(255,255,255,0.2);
-  padding: 35px;
-  border: 2px solid #fff;
-  border-radius: 20px/50px;
-  background-clip: padding-box;
-  text-align: center;
-}
-
-.button {
-  font-size: 1em;
-  padding: 10px;
-  color: #fff;
-  border: 2px solid #06D85F;
-  border-radius: 20px/50px;
-  text-decoration: none;
-  cursor: pointer;
-  transition: all 0.3s ease-out;
-}
-.button:hover {
-  background: #06D85F;
-}
-
-.overlay {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.7);
-  transition: opacity 500ms;
-  visibility: hidden;
-  opacity: 0;
-}
-.overlay:target {
-  visibility: visible;
-  opacity: 1;
-}
-
-.popup {
-  margin: 70px auto;
-  padding: 20px;
-  background: #fff;
-  border-radius: 5px;
-  width: 30%;
-  position: relative;
-  transition: all 5s ease-in-out;
-}
-
-.popup h2 {
-  margin-top: 0;
-  color: #333;
-  font-family: Tahoma, Arial, sans-serif;
-}
-.popup .close {
-  position: absolute;
-  top: 20px;
-  right: 30px;
-  transition: all 200ms;
-  font-size: 30px;
-  font-weight: bold;
-  text-decoration: none;
-  color: #333;
-}
-.popup .close:hover {
-  color: #06D85F;
-}
-.popup .content {
-  max-height: 30%;
-  overflow: auto;
-}
-
 #rec {
   height: 600px;
   width: 1000px;
   position:absolute;
-  left:12%;
+  left:15%;
   top:12%;
   }
 
@@ -125,13 +52,13 @@ body {
 
     .button1 {
       position: fixed;
-      left:27%;
+      left:33%;
       top:80%;
       z-index: 3;
     }
     .button2 {
       position: fixed;
-      left:42%;
+      left:45%;
       top:80%;
       z-index: 3;
     }
@@ -168,17 +95,26 @@ font-size:35px;
 }
     #player {
       position:absolute;
-      left:85%;
-      top:10%;
+      left:90%;
+      top:17%;
       height:50px;
-      width:100px;
+      width:50px;
+      z-index: 2;
     }
-
+    #ipod {
+      position:absolute;
+      left:83%;
+      top:0;
+      height:300px;
+      width:auto;
+      z-index:1;
+    }
+    
 #image1 {
   position: absolute;
   width: 150px;
   height: auto;
-  top:25%;
+  top:27%;
   left: 25%;
   z-index: 2;
 }
@@ -187,30 +123,30 @@ font-size:35px;
   position:absolute;
   width: 115px;
 height:auto;
-  top: 20%;
-  left: 35%;
+  top: 23%;
+  left: 37%;
   z-index: 2;
 }
 #image3 {
   position:absolute;
-  width: 105px;
+  width: 140px;
   height: auto;
-  top: 25%;
+  top: 28%;
   left: 45%;
   z-index: 2;
 }
    #image4 {
       position:absolute;
-      width: 110px;
+      width: 125px;
       height: auto;
-      top:25%;
+      top:27%;
       left:55%;
       z-index: 2;
     }
     
     #image5 {
       height:auto;
-      width:130px;
+      width:140px;
       position:absolute;
     top: 27%;
     left:65%;

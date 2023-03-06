@@ -1,15 +1,36 @@
 body {
-  background-image: url(https://i.pinimg.com/originals/72/b9/8a/72b98a2c3d1ec46e2cab6cb3847de563.gif);
+  background-image: url(mic\ 2.gif);
+  background-repeat:repeat;
+}
+* + * {
+  margin-top: 1.5em;
 }
 
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(8, 5vw);
-  grid-gap: 15px;
-}
 
- .video-container {
+article {
+  background-color:whitesmoke;
+  box-shadow: 0 0 0.9em rgb(248, 177, 220);
+  margin: 0 auto;
+  padding: 0.5em 1em;
+  max-width: 660px;
+}
+h1{
+  color: rgb(243, 183, 221);
+  size: 15px;
+  font-family: Mustang Sans;
+text-decoration-line: overline underline;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: "https://fonts.google.com/specimen/DM+Sans";
+  }
+
+p {
+  font-family: DM Sans;
+  color:darkslateblue
+
+}
+ /*.video-container {
     position:relative;
   }
   #videoplayer1 {
