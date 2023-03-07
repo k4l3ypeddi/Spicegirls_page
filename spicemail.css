@@ -14,10 +14,26 @@
         font-family:Menlo;
         src: url(https://fontsnetwork.com/menlo-regular-font/);
       }
-
+      .home {
+        position:absolute;
+        left:5%;
+        top:5%;
+        height:50px;
+        width:auto;
+        background-color: lightpink;
+      }
+      .home:hover {  
+      background-color: hotpink;
+      }
+      
 #name {
-    font-family:Fiolex Girls;
+    font-family:Menlo;
+    ;
 }
+#email {
+  font-family:Menlo;
+}
+
 .form {
   position:Absolute;
   left:40%;
@@ -26,10 +42,4 @@
 label  {
   font-family:Fiolex Girls;
   font-size: 25px;
-}
-textarea {
-  background-color:rgb(224, 223, 253;
-}
-#email {
-  background-color:rgb(224, 223, 253);
 }
