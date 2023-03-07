@@ -1,7 +1,8 @@
 body {
-  height: 2000px;
+  height: 1800px;
   background:radial-gradient(circle, rgba(157,241,254,1) 0%, rgba(246,236,246,1) 100%);;
 }
+
 /*background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(217,177,209,1) 25%, rgba(197,180,216,1) 41%, rgba(148,187,233,1) 100%);;
 }
 
@@ -13,10 +14,31 @@ body {
   height: auto;
 */
 
+ 
 @font-face {
   font-family:Menlo;
   src: url(https://fontsnetwork.com/menlo-regular-font/);
 }
+
+#logo {
+  position:absolute;
+  left:40%;
+  top:5%;
+  width:300px;
+}
+
+.home {
+  position:absolute;
+  left:5%;
+  top:5%;
+  height:50px;
+  width:auto;
+  background-color: lightpink;
+}
+.home:hover {  
+background-color: hotpink;
+}
+
 a.tooltip-hover span {
     position: absolute;
     top: 10px;
@@ -42,7 +64,7 @@ a.tooltip-hover:hover span {
 
 .tooltip-hover {
   position: absolute;
-  left:35%;
+  left:40%;
   top:15%;
   height:500px;
   z-index: 2;
@@ -50,7 +72,7 @@ a.tooltip-hover:hover span {
 
  .tooltip-hover img {
   position: absolute;
-  left:35%;
+  left:40%;
   top:15%;
   height:500px;
   z-index: 2;
@@ -153,6 +175,7 @@ a.bananasplit-hover:hover span {
   font-size: 70%;
   color: rgb(5, 5, 5);
   opacity: 1;
+  z-index:3;
 }
 
 
@@ -227,9 +250,9 @@ a.bananasplit3-hover:hover span {
   position: absolute;
   height: 350px;
   width: auto;
-  left:50%;
+  left:55%;
   top:35%;
-  z-index: 1;
+  z-index: 2;
   transform: rotate(0.02turn);
 
  }
@@ -238,9 +261,9 @@ a.bananasplit3-hover:hover span {
   position: absolute;
   height: 350px;
   width: auto;
-  left:50%;
+  left:55%;
   top:35%;
-  z-index: 1;
+  z-index: 2;
   transform: rotate(0.02turn);
   }
 
@@ -296,7 +319,7 @@ a.bananasplit4-hover:hover span {
 
   a.bananasplit5-hover span {
     position: absolute;
-    top: 200px;
+    top: 275px;
     left:50px;
     width: 250px; 
     border: #000 1px solid;
@@ -320,7 +343,7 @@ a.bananasplit4-hover:hover span {
     position: absolute;
     height: 350px;
     width: auto;
-    left:60%;
+    left:67%;
     top:50%;
     z-index: 2;
   
@@ -330,7 +353,7 @@ a.bananasplit4-hover:hover span {
     position: absolute;
     height: 350px;
     width: auto;
-    left:60%;
+    left:67%;
     top:50%;
     z-index: 2;
     }
@@ -412,7 +435,7 @@ a.bananasplit4-hover:hover span {
     height:350px;
     width: auto;
     left:30%;
-    top:85%;
+    top:90%;
     transform: rotate(-0.05);
     z-index: 2;
    }
@@ -422,7 +445,7 @@ a.bananasplit4-hover:hover span {
     height:350px;
     width: auto;
     left:30%;
-    top:85%;
+    top:90%;
     transform: rotate(-0.05);
     z-index: 2;
     }
@@ -431,7 +454,7 @@ a.bananasplit4-hover:hover span {
     opacity:0;
     cursor: pointer;
   }
-  
+
    /* customizable snowflake styling */
  .snowflake {
   color: #fff;

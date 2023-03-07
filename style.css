@@ -1,9 +1,7 @@
 
 
 body {
-  height: 1000px;
    background-image:url(stickers/sparkles3.gif);
-   background-size:200px;
    background-repeat: repeat;
    background-color:rgb(255, 223, 229);
   cursor: url(images/cursor.pix.png),auto;
@@ -35,11 +33,11 @@ body {
 
     #intro {
       color: hsl(300, 92%, 76%);
-      text-align: center;
       position:fixed;
       background: url(http://www.gigaglitters.com/img/DCglit107.gif); 
       -webkit-background-clip:text;
       -webkit-text-fill-color:transparent;
+      transform: rotate(-10deg);
     }
     #intro2 {
       color: hsl(300, 92%, 76%);
@@ -52,7 +50,7 @@ body {
 
     .button1 {
       position: fixed;
-      left:33%;
+      left:25%;
       top:80%;
       z-index: 3;
     }
@@ -64,7 +62,7 @@ body {
     }
     .button3 {
       position: fixed;
-      left:57%;
+      left:65%;
       top:80%;
       z-index: 3;
     }
@@ -96,7 +94,7 @@ font-size:35px;
     #player {
       position:absolute;
       left:90%;
-      top:17%;
+      top:14%;
       height:50px;
       width:50px;
       z-index: 2;
