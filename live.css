@@ -5,8 +5,18 @@ body {
 * + * {
   margin-top: 1.5em;
 }
-
-
+.home {
+  position:absolute;
+  left:5%;
+  top:5%;
+  height:50px;
+  width:auto;
+  background-color: lightpink;
+}
+.home:hover {  
+  background-color: hotpink;
+  }
+  
 article {
   background-color:whitesmoke;
   box-shadow: 0 0 0.9em rgb(248, 177, 220);
@@ -16,7 +26,7 @@ article {
 }
 h1{
   color: rgb(243, 183, 221);
-  size: 15px;
+  size: 20px;
   font-family: Mustang Sans;
 text-decoration-line: overline underline;
 }
@@ -24,10 +34,15 @@ text-decoration-line: overline underline;
   font-family: "DM Sans";
   src: "https://fonts.google.com/specimen/DM+Sans";
   }
-
+  @font-face {
+    font-family: "";
+    src: "";
+    }
+  
 p {
-  font-family: DM Sans;
-  color:darkslateblue
+  font-family: 'Courier New', Courier, monospace;
+  color:darkslateblue;
+size:10px;
 
 }
  /*.video-container {
