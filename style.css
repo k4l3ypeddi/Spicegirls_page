@@ -91,22 +91,7 @@ form {
 text-align: center;
 font-size:35px;
 }
-    #player {
-      position:absolute;
-      left:90%;
-      top:14%;
-      height:50px;
-      width:50px;
-      z-index: 2;
-    }
-    #ipod {
-      position:absolute;
-      left:83%;
-      top:0;
-      height:300px;
-      width:auto;
-      z-index:1;
-    }
+    
     
 #gingerspice{
   position: absolute;
